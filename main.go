@@ -37,7 +37,8 @@ func home(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+  port := os.Getenv("PORT")
 	http.HandleFunc("/", home)
-	fmt.Println("Serving on :4000")
-	log.Fatal(http.ListenAndServe(":4000", nil))
+	fmt.Println("Serving on :" + port)
+  log.Fatal(http.ListenAndServe(":"+ port, nil))
 }
