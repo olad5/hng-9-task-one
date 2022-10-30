@@ -21,6 +21,7 @@ func home(w http.ResponseWriter, r *http.Request) {
 	slackUsername, bio :=
 		os.Getenv("SLACK_USERNAME"),
 		os.Getenv("BIO")
+
 	details := Profile{
 		SlackUserName: slackUsername,
 		Age:           age,
