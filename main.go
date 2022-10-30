@@ -10,9 +10,9 @@ import (
 )
 
 type Profile struct {
-	SlackUserName string `json:"slackUserName"`
-	Age           int64  `json:"age"`
+	SlackUserName string `json:"slackUsername"`
 	Backend       bool   `json:"backend"`
+	Age           int64  `json:"age"`
 	Bio           string `json:"bio"`
 }
 
